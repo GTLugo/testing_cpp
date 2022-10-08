@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.24)
-project(cpp_lib_template)
+project(testing)
 
 # ===================================================
 # TOP LEVEL CONFIGURATION

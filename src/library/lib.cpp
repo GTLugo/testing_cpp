@@ -7,7 +7,7 @@
 #include <iostream>
 
 namespace lib {
-  void greet()
+  void testing()
   {
     std::cout << "hi, friends!\n";
   }

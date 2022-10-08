@@ -2,5 +2,5 @@
 
 int main(const int, char**)
 {
-  lib::greet();
+  lib::testing();
 }

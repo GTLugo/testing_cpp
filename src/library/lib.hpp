@@ -5,5 +5,5 @@
 #pragma once
 
 namespace lib {
-  void greet();
+  void testing();
 } // lib

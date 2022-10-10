@@ -2,6 +2,11 @@ cmake_minimum_required(VERSION 3.24)
 project(testing)
 
 # ===================================================
+# DEPENDENCIES
+# ===================================================
+add_subdirectory(extern/koyote_utils)
+
+# ===================================================
 # TOP LEVEL CONFIGURATION
 # ===================================================
 add_subdirectory(src)

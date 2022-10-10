@@ -23,3 +23,5 @@ target_include_directories(${TARGET_NAME} PUBLIC "../include" ".")
 # ===================================================
 # DEPENDENCIES
 # ===================================================
+target_include_directories(${TARGET_NAME} PUBLIC "../extern/koyote_utils/include")
+target_link_libraries(${TARGET_NAME} PUBLIC koyote)

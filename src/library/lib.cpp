@@ -4,11 +4,14 @@
 
 #include "lib.hpp"
 
-#include <iostream>
+#include <koyote/utilities.hpp>
 
 namespace lib {
   void testing()
   {
-    std::cout << "hi, friends!\n";
+    std::vector<std::string> strs{ "fubuki", "mio", "koyori", "okayu", "korone" };
+    for (const auto& [i, str]: std::views::zip(std::views::iota(0, static_cast<int>(strs.size() - 1)), strs)) {
+      std::cout << i << ", " << str;
+    }
   }
 } // lib

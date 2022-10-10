@@ -9,5 +9,9 @@ set(SOURCES
     )
 add_executable(${TARGET_NAME} ${SOURCES})
 target_compile_features(${TARGET_NAME} PRIVATE cxx_std_23)
+
 target_include_directories(${TARGET_NAME} PUBLIC "../include" ".")
 target_link_libraries(${TARGET_NAME} PUBLIC library)
+
+target_include_directories(${TARGET_NAME} PUBLIC "../extern/koyote_utils/include")
+target_link_libraries(${TARGET_NAME} PUBLIC koyote)

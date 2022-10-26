@@ -3,15 +3,19 @@
 //
 
 #include "lib.hpp"
-
 #include <koyote/utilities.hpp>
 
 namespace lib {
   void testing()
   {
-    std::vector<std::string> strs{ "fubuki", "mio", "koyori", "okayu", "korone" };
-    for (const auto& [i, str]: std::views::zip(std::views::iota(0, static_cast<int>(strs.size() - 1)), strs)) {
-      std::cout << i << ", " << str;
-    }
+  
+    int a = 5;
+    int& b = a;
+    b = 6;
+    
+    int* c = &a;
+    
+    std::cout << a << ' ' << b << ' ' << *c << '\n';
+    
   }
 } // lib
